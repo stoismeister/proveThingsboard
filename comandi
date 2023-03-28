@@ -1,0 +1,96 @@
+{
+  "Comandi": {
+    "Command_mode_entry": {
+      "cmd": "$$$",
+      "descrizione": "Ingresso in command mode",
+      "esempio": "$$$"
+    },
+    "Comandi_MCU": {
+      "Intestazione_MCU": {
+        "cmd": "",
+        "descrizione": "Comandi MCU",
+        "esempio": ""
+      },
+      "Modalità_lavoro_micro": {
+        "cmd": "AT+MODE=",
+        "descrizione": "Set o Get modalità di lavoro microcontrollore",
+        "esempio": "AT+MODE=x,0001,10;"
+      },
+      "Baud_Rate": {
+        "cmd": "AT+BAUD=",
+        "descrizione": "Set o Get baud rate",
+        "esempio": "AT+BAUD=115200;"
+      },
+      "Exit_command_mode": {
+        "cmd": "AT+EXIT=1",
+        "descrizione": "Usato per exit da cmd e ritorno modalità precedente",
+        "esempio": "AT+EXIT=1;"
+      },
+      "Comandi": {
+        "cmd": "AT+HELP=",
+        "descrizione": "Get Elenco comandi",
+        "esempio": "AT+HELP=?;"
+      },
+      "Stato_pin": {
+        "cmd": "AT+OUT1=",
+        "descrizione": "Set o Get dello stato relè",
+        "esempio": "AT+OUT1=x,0001,10;"
+      },
+      "Pin_input": {
+        "cmd": "AT+INP1=",
+        "descrizione": "Get o Set Aggiornamento impostazione pin di input=RB1. I valori sono: InputMode=0 (Input di default, quello configurato in IO_Init() )",
+        "esempio": "AT+INP1=x,0001,10;"
+      },
+      "Stato_out1": {
+        "cmd": "AT+SAPP=",
+        "descrizione": "Comando di get di alcune informazioni del sistema, la risposta è customizzata in funzione del modulo radio disponibile dello stato di out1, temp,umidità, corrente, tensione, potenza",
+        "esempio": "AT+SAPP=?,0001,10;"
+      },
+      "Reset_EPR": {
+        "cmd": "AT+RRTM=",
+        "descrizione": "Reset EEPROM",
+        "esempio": "AT+RRTM=1,0001,10;"
+      },
+      "Reset_Micro": {
+        "cmd": "AT+MCRS=",
+        "descrizione": "Reset software microcontrollore",
+        "esempio": "AT+MCRS=1,0001,10;"
+      },
+      "Pacchetto_telemtria": {
+        "cmd": "AT+DTLM=",
+        "descrizione": "Richiesta pacchetto di telemetria (la composizione del pacchetto è nell'altro documento)",
+        "esempio": "AT+DTLM=?,0001,10;"
+      },
+      "Richiesta_Informazioni": {
+        "cmd": "AT+DATT=",
+        "descrizione": "Richiesta delle informazioni relative a modello, versione fw e revisione hw (per esempio la risposta è: Attributes=CLR-ED,fw ver 155.0)",
+        "esempio": "AT+DATT=?,0001,10;"
+      },
+      "LowPower_Device": {
+        "cmd": "AT+LPWR=",
+        "descrizione": "Set o Get del dispositivo in normal mode o low power.",
+        "esempio": "AT+LPWR=0-60-0;-NO LPW-/AT+LPWR=1-60-1;-SI LPW-"
+      },
+      "Parità": {
+        "cmd": "AT+EVEN=",
+        "descrizione": "Set o Get tipo di parità applicato,ossia numero bit trasmessi su seriale",
+        "esempio": "AT+EVEN=x,0001,10;"
+      },
+      "Polarità": {
+        "cmd": "AT+NPOL=",
+        "descrizione": "Set o Get tipo di polarità applicato",
+        "esempio": "AT+NPOL=x,0001,10;"
+      },
+      "Bus_I2C": {
+        "cmd": "AT+STAT=",
+        "descrizione": "get dello stato bus I2C",
+        "esempio": "AT+STAT=?,0001,10;"
+      },
+      "Contatori_Time_work": {
+        "cmd": "AT+TMWK=",
+        "descrizione": "Set o Get dei contatori del tempo di lavoro in LPWR e Run",
+        "esempio": "AT+TMWK=x,0001,10;"
+      }
+    }
+  }
+}
